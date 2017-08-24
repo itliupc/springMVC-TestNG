@@ -1,0 +1,237 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.gaussic</groupId>
+    <artifactId>springdemo</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>springdemo-list Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <spring.version>4.3.10.RELEASE</spring.version>
+        <hibernate.version>5.1.0.Final</hibernate.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        
+        <dependency>  
+		    <groupId>org.springframework</groupId>  
+		    <artifactId>spring-context</artifactId>  
+		    <version>${spring.version}</version>  
+		</dependency>
+		
+		<dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-jdbc</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.10.1.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.0.1</version>
+		    <scope>provided</scope>
+		</dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
+        
+        
+        <!-- TestNG相关依赖 -->
+        <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>4.3.10.RELEASE</version>
+		    <scope>test</scope>
+		</dependency>
+        
+        <dependency>
+		    <groupId>net.sf.json-lib</groupId>
+		    <artifactId>json-lib</artifactId>
+		    <version>2.4</version>
+			<classifier>jdk15</classifier> 
+		</dependency>
+        <dependency>
+		    <groupId>javax.transaction</groupId>
+		    <artifactId>javax.transaction-api</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<type>jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-core</artifactId>
+		    <version>1.10.19</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest-core</artifactId>
+		    <version>1.3</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+			<version>1.3</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.8.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.8.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		    <version>2.8.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.skyscreamer</groupId>
+		    <artifactId>jsonassert</artifactId>
+		    <version>1.4.0</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- 添加testNG依赖 -->  
+       <dependency>  
+           <groupId>org.testng</groupId>  
+           <artifactId>testng</artifactId>  
+           <version>6.9.10</version>  
+           <scope>test</scope>  
+       </dependency> 
+       <!-- 依赖reportNg 关联testNg -->
+       <dependency>
+           <groupId>org.uncommons</groupId>
+           <artifactId>reportng</artifactId>
+           <version>1.1.4</version>
+           <scope>test</scope>
+           <exclusions>
+               <exclusion>
+                   <groupId>org.testng</groupId>
+                   <artifactId>testng</artifactId>
+               </exclusion>
+           </exclusions>
+       </dependency>
+       <!-- 依赖Guice -->
+       <dependency>
+           <groupId>com.google.inject</groupId>
+           <artifactId>guice</artifactId>
+           <version>4.0</version>
+           <scope>test</scope>
+       </dependency>
+       <!-- 依赖velocity -->
+		<dependency>
+		    <groupId>velocity</groupId>
+		    <artifactId>velocity-dep</artifactId>
+		    <version>1.4</version>
+		</dependency>
+	       <!-- 依赖poi读取Excel数据 -->
+	       <dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.14</version>
+		</dependency> 	
+
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+	                 <source>1.8</source>
+	                 <target>1.8</target>
+                 </configuration>
+            </plugin>
+            <!-- 运行项目中src/test/Java文件夹下的testcase -->
+	     <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<configuration>
+					<!-- 不对xls进行转码 -->
+			    	<properties>
+		                <property>
+		                    <name>usedefaultlisteners</name>
+		                    <value>false</value>
+		                </property>
+		                <property>
+		                    <name>listener</name>
+		                    <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+		                </property>
+		            </properties>
+					<suiteXmlFiles>
+					    <suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<!-- 系统参数默认不初始化数据  mvn test -DinitData=true -->
+				   <systemPropertyVariables>
+		                  <init>false</init>
+		                  <filePath>classpath:TestDataInit.sql</filePath>
+	               </systemPropertyVariables>
+	  		</configuration>
+		</plugin>
+        </plugins>
+        <testResources>
+         <testResource>
+             <directory>src/test/java</directory>
+             <includes>
+                 <include>**/*.xls</include>
+                 <include>**/*.json</include>
+             </includes>
+             <filtering>false</filtering>
+         </testResource>
+         <testResource>
+             <directory>src/test/resources</directory>
+             <includes>
+                 <include>**/*.xls</include>
+                 <include>**/*.json</include>
+             </includes>
+             <filtering>false</filtering>
+         </testResource>
+     </testResources>
+    </build>
+</project>
