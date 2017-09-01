@@ -26,7 +26,7 @@ import com.wafer.wtp.util.FileReader;
 
 public class AbstractTestNGTest extends AbstractTransactionalTestNGSpringContextTests {
   
-  public static final String DP_DATA_TYPE = "rest";// rest,json,excel
+  public static final String DP_DATA_TYPE = "rest"; // rest,json,excel
   
   public static final String DP_REST_PATH = "http://localhost:8000/api/v1/dss/1";
 
