@@ -2,8 +2,6 @@ package com.wafer.wtp.base;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.util.Map;
-
 import javax.transaction.Transactional;
 
 import org.skyscreamer.jsonassert.JSONAssert;
@@ -17,7 +15,6 @@ import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.wafer.wtp.annotation.Field;
-import com.wafer.wtp.util.UrlTemplate;
 
 /**
  * 接口测试公共类
@@ -46,13 +43,10 @@ public class TestAPI extends AbstractTestNGTest {
       @Field("type") String type, @Field("paramters") String paramters,
       @Field("expectResult") String expectResult, @Field("expectStatus") String expectStatus)
       throws JsonProcessingException, Exception {
-    // 转换Url参数
-    Map<String, String> map = UrlTemplate.format(url, paramters);
-    
     // 获取requestBuilder对象
-    MockHttpServletRequestBuilder requestBuilder = getRequestBuilder(map.get("url"), type);
+    MockHttpServletRequestBuilder requestBuilder = getRequestBuilder(url, type);
     // 添加请求参数
-    requestBuilder = addParamters(requestBuilder, map.get("param"));
+    requestBuilder = addParamters(requestBuilder, paramters);
 
     ResultActions resultActions = getMockMvc().perform(requestBuilder);
 
