@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13678" started-at="2017-09-01T08:49:10Z" finished-at="2017-09-01T08:49:24Z">
+  <suite name="Default suite" duration-ms="41997" started-at="2017-09-04T01:58:01Z" finished-at="2017-09-04T01:58:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13678" started-at="2017-09-01T08:49:10Z" finished-at="2017-09-01T08:49:24Z">
+    <test name="Default test" duration-ms="41997" started-at="2017-09-04T01:58:01Z" finished-at="2017-09-04T01:58:43Z">
       <class name="com.wafer.wtp.base.TestAPI">
-        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="8" started-at="2017-09-01T16:49:10Z" finished-at="2017-09-01T16:49:10Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="8" started-at="2017-09-04T09:58:01Z" finished-at="2017-09-04T09:58:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="3038" started-at="2017-09-01T16:49:10Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2017-09-01T16:49:13Z">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="3308" started-at="2017-09-04T09:58:01Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2017-09-04T09:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="setup" is-config="true" duration-ms="73" started-at="2017-09-01T16:49:13Z" finished-at="2017-09-01T16:49:14Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="setup" is-config="true" duration-ms="75" started-at="2017-09-04T09:58:04Z" finished-at="2017-09-04T09:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="11" started-at="2017-09-01T16:49:14Z" finished-at="2017-09-01T16:49:14Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="14" started-at="2017-09-04T09:58:41Z" finished-at="2017-09-04T09:58:41Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="FAIL" signature="testAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="testAPI" duration-ms="7687" started-at="2017-09-01T16:49:14Z" data-provider="api_data" finished-at="2017-09-01T16:49:21Z">
+        <test-method status="FAIL" signature="testAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="testAPI" duration-ms="930" started-at="2017-09-04T09:58:41Z" data-provider="api_data" finished-at="2017-09-04T09:58:42Z">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAPI -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="4" started-at="2017-09-01T16:49:21Z" finished-at="2017-09-01T16:49:21Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="4" started-at="2017-09-04T09:58:42Z" finished-at="2017-09-04T09:58:42Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="5" started-at="2017-09-01T16:49:21Z" finished-at="2017-09-01T16:49:21Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="10" started-at="2017-09-04T09:58:42Z" finished-at="2017-09-04T09:58:42Z">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="FAIL" signature="testAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="testAPI" duration-ms="1851" started-at="2017-09-01T16:49:21Z" data-provider="api_data" finished-at="2017-09-01T16:49:23Z">
+        <test-method status="FAIL" signature="testAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="testAPI" duration-ms="482" started-at="2017-09-04T09:58:42Z" data-provider="api_data" finished-at="2017-09-04T09:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,10 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[{"userId":1,"userName":"admin"}]]>
+                <![CDATA[{
+    "userId":1,
+    "userName":"admin"
+}]]>
               </value>
             </param>
             <param index="5">
@@ -210,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAPI -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="10" started-at="2017-09-01T16:49:23Z" finished-at="2017-09-01T16:49:23Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2017-09-04T09:58:43Z" finished-at="2017-09-04T09:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -221,7 +224,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="8" started-at="2017-09-01T16:49:23Z" finished-at="2017-09-01T16:49:23Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="7" started-at="2017-09-04T09:58:43Z" finished-at="2017-09-04T09:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -232,7 +235,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="FAIL" signature="testAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="testAPI" duration-ms="867" started-at="2017-09-01T16:49:23Z" data-provider="api_data" finished-at="2017-09-01T16:49:24Z">
+        <test-method status="FAIL" signature="testAPI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="testAPI" duration-ms="204" started-at="2017-09-04T09:58:43Z" data-provider="api_data" finished-at="2017-09-04T09:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -308,7 +311,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAPI -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2017-09-01T16:49:24Z" finished-at="2017-09-01T16:49:24Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2017-09-04T09:58:43Z" finished-at="2017-09-04T09:58:43Z">
           <params>
             <param index="0">
               <value>
@@ -319,7 +322,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.wafer.wtp.base.TestAPI@4e096385]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2017-09-01T16:49:24Z" finished-at="2017-09-01T16:49:24Z">
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.wafer.wtp.base.TestAPI@2accdbb5]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2017-09-04T09:58:43Z" finished-at="2017-09-04T09:58:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->

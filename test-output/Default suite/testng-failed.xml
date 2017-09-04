@@ -3,11 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.wafer.wtp.base.TestAPI">
-        <methods>
-          <include name="testAPI"/>
-        </methods>
-      </class> <!-- com.wafer.wtp.base.TestAPI -->
+      <class name="com.wafer.wtp.base.TestAPI"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
